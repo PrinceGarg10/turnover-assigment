@@ -1,4 +1,8 @@
 import React from 'react';
+import { CiSearch, CiShoppingCart } from "react-icons/ci";
+import { FiChevronRight } from 'react-icons/fi';
+
+
 
 const CustomHeader = () => {
     return (
@@ -24,16 +28,18 @@ const CustomHeader = () => {
                         </div>
                         <div className="flex items-center mr-5">
                             <div className="search-cart-container">
-                                <p className="pr-2">Search</p>
+                                <p className="pr-5"><CiSearch fontSize={20} /></p>
                             </div>
-                            <p className="pr-2">Cart</p>
+                            <p className="pr-2"><CiShoppingCart fontSize={20} /></p>
 
                         </div>
                     </div>
 
                 </div>
                 <div className='bg-gray-200 text-center p-1'>
-                    &lt;&nbsp;&nbsp;&nbsp; Get 10% off on business sign up&nbsp;&nbsp;&nbsp;&gt;
+                    <p className='text-gray-950'>
+                        &lt;&nbsp;&nbsp;&nbsp;Get 10% off on business sign up&nbsp;&nbsp;&nbsp;&gt;
+                    </p>
                 </div>
             </nav>
         </header>
