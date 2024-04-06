@@ -19,7 +19,7 @@ export default function Register() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true)
-        const res = await register_user(formData);
+        const res = await register_user(formData,setIsLoading);
         if (res.success) {
             toast.success(res.message);
             setIsOtp(true)
@@ -32,7 +32,7 @@ export default function Register() {
             const errorMsg = res.message || (typeof res === 'string' ? res : 'Something Went Wrong')
             toast.error(errorMsg);
         }
-        setIsLoading(false)
+        // setIsLoading(false)
     };
 
     return (

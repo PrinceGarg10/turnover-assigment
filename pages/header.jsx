@@ -1,6 +1,5 @@
 import React from 'react';
 import { CiSearch, CiShoppingCart } from "react-icons/ci";
-import { FiChevronRight } from 'react-icons/fi';
 
 
 
