@@ -13,7 +13,7 @@ export default function Verify({ codeAndEmail }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (value && String(value) === String(codeAndEmail.code)) {
+    if (value && String(value) === String(codeAndEmail?.code)) {
       toast.success("Verified Successfully. Please Login");
       Router.push('/')
     }
@@ -35,7 +35,7 @@ export default function Verify({ codeAndEmail }) {
                 Enter the 8 digit code you have received on
               </p>
               <p className="leading-tight tracking-tight text-slate-600 dark:text-white !-mt-2">
-                {codeAndEmail.email}
+                {codeAndEmail?.email}
               </p>
               <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6" action="#">
                 <div className='text-left mb-10'>
